@@ -4,133 +4,250 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Noushad Alam - Full Stack Developer</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body class="main-content">
-    <header class="container header active" id="home">
-        <div class="header-content">
-            <div class="left-header">
-                <div class="h-shape"></div>
-                <div class="image">
-                    <img src="img/hero.png" alt="">
-                </div>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Noushad Alam</a>
             </div>
-            <div class="right-header">
-                <h1 class="name">
-                    Hi, I'm <span>Noushad Alam.</span>
-                    A Full Stack Developer.
-                </h1>
-                <p>
-                    A programmer passionate about breaking down complex coding concepts into clear, 
-                    understandable insights for others.
-                    
-                </p>
-                <div class="btn-con">
-                    <a href="NOUSHAD ALAM- CV- NEW.pdf" class="main-btn">
-                        <span class="btn-text">Download CV</span>
-                        <span class="btn-icon"><i class="fas fa-download"></i></span>
-                    </a>
-                </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
-    </header>
-    <main>
-        <section class="container about" id="about">
-            <div class="main-title">
-                <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
-            </div>
-            <div class="about-container">
-                <div class="left-about">
-                    <h4>Information About me</h4>
-                    <p>
-                        I'm a Web Developer, I love to create beautiful and functional websites.
-                        Skilled in project-based learning and 
-                        effective communication, demonstrating critical thinking and teamwork. <br /> 
-                        <br /> 
-                    </p>
-                    <div class="btn-con">
-                        <a href="NOUSHAD ALAM- CV- NEW.pdf" class="main-btn">
-                            <span class="btn-text">Download CV</span>
-                            <span class="btn-icon"><i class="fas fa-download"></i></span>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight">Noushad Alam</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Full Stack Developer & Programmer</h2>
+                    <p class="hero-description">
+                        I’m a passionate developer who enjoys turning ideas into real-world solutions, not just building projects for the sake of it. I focus on creating meaningful systems that solve practical problems, combining my skills in Python, SQL, web development, and AI.                    </p>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                        <a href="NOUSHAD-ALAM-CV-Resume_main.pdf" class="btn btn-secondary" target="_blank">
+                            <i class="fas fa-download"></i> Download CV
                         </a>
                     </div>
                 </div>
-                <div class="right-about">
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">5+</p>
-                            <p class="small-text">Projects <br /> Completed</p>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="img/hero.png" alt="Noushad Alam" class="profile-img">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <a href="#about">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </div>
+        <div class="hero-bg-shape"></div>
+    </section>
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About <span>Me</span></h2>
+                <p>Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>I'm a passionate <span>Programmer & Developer</span></h3>
+                    <p>
+                        Computer Science student at FUUAST University with expertise in web development, Python, and C programming. I build clean, efficient applications that solve real-world problems using modern technologies like HTML5, CSS3, JavaScript, and React.
+                    </p>
+                    <p>
+                        From creating interactive websites to developing AI-powered solutions, I combine technical excellence with creative problem-solving. I'm dedicated to delivering quality code and turning ideas into impactful digital experiences.
+                    </p>
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <i class="fas fa-user"></i>
+                            <span>Noushad Alam</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>FUUAST University</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>alamnoushad081@gmail.com</span>
                         </div>
                     </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">1</p>
-                            <p class="small-text">Years of <br /> experience</p>
-                        </div>
+                    <a href="NOUSHAD-ALAM-CV-Resume_main.pdf" class="btn btn-primary" target="_blank">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h3>10+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>2+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>100%</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">40+</p>
-                            <p class="small-text">Customer <br /> reviews</p>
-                        </div>
+    <!-- Skills Section -->
+    <section class="skills section">
+        <div class="container">
+            <div class="section-title">
+                <h2>My <span>Skills</span></h2>
+                <p>Technologies I work with</p>
+            </div>
+            <div class="skills-content">
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
                     </div>
+                    <h3>HTML5</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 80%"></div>
+                    </div>
+                    <span>80%</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS3</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 95%"></div>
+                    </div>
+                    <span>95%</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>SQL</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 75%"></div>
+                    </div>
+                    <span>75%</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>React</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 75%"></div>
+                    </div>
+                    <span>75%</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 70%"></div>
+                    </div>
+                    <span>85%</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>C Programming</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 85%"></div>
+                    </div>
+                    <span>85%</span>
                 </div>
             </div>
-            <div class="about-stats">
-                <h4 class="stat-title">My Skills</h4>
-                <div class="progress-bars">
-                    <div class="progress-bar">
-                        <p class="prog-title">HTML5</p>
-                        <div class="progress-con">
-                            <p class="prog-text">80%</p>
-                            <div class="progress">
-                                <span class="html"></span>
-                            </div>
-                        </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>My <span>Services</span></h2>
+                <p>What I offer</p>
+            </div>
+            <div class="services-content">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
                     </div>
-                    <div class="progress-bar">
-                        <p class="prog-title"> Tailwind CSS</p>
-                        <div class="progress-con">
-                            <p class="prog-text">95%</p>
-                            <div class="progress">
-                                <span class="css"></span>
-                            </div>
-                        </div>
+                    <h3>Python Development</h3>
+                    <p>Transform your ideas into powerful, scalable applications. I craft intelligent Python solutions that streamline workflows, accelerate performance, and solve complex business challenges. From automation scripts to data-driven applications, every line of code is optimized for efficiency and maintainability.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
                     </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Javascript</p>
-                        <div class="progress-con">
-                            <p class="prog-text">75%</p>
-                            <div class="progress">
-                                <span class="js"></span>
-                            </div>
-                        </div>
+                    <h3>SQL Development</h3>
+                    <p>Unlock the power of your data with expertly designed databases and lightning-fast queries. I architect robust data solutions that ensure seamless operations, data integrity, and exceptional performance. Your business information becomes a strategic asset with optimized database management and intelligent query design.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
                     </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">ReactJS</p>
-                        <div class="progress-con">
-                            <p class="prog-text">75%</p>
-                            <div class="progress">
-                                <span class="react"></span>
-                            </div>
-                        </div>
+                    <h3>Problem Solving & Logical Thinking </h3>
+                    <p>Every challenge has an elegant solution. I excel at breaking down intricate problems into manageable components and crafting intelligent, optimized solutions. With strong analytical abilities and strategic thinking, I deliver code that's not just functional, but brilliant—scalable, maintainable, and built to handle real-world complexity with ease.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
                     </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Python</p>
-                        <div class="progress-con">
-                            <p class="prog-text">70%</p>
-                            <div class="progress">
-                                <span class="python"></span>
-                            </div>
-                        </div>
+                    <h3>Web Development (HTML & CSS)</h3>
+                    <p>Build stunning digital experiences that captivate users. I create pixel-perfect, fully responsive websites that work flawlessly on every device. Modern design principles combined with clean, semantic code ensure your website is not only beautiful but also fast, accessible, and optimized for search engines.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
                     </div>
+                    <h3>Artificial Intelligence</h3>
+                    <p>Harness the future of technology today. I develop intelligent AI-powered systems that learn, adapt, and deliver smarter solutions. From predictive analytics to intelligent automation, I integrate cutting-edge AI capabilities into your applications, enabling you to make data-driven decisions and stay ahead of the competition.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <h3>JavaScript Development</h3>
+                    <p>Create dynamic, interactive web experiences with modern JavaScript. I build fast, responsive applications using vanilla JavaScript and frameworks like React. From real-time interactivity to complex client-side logic, I deliver engaging user experiences that bring your websites to life.</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline-section">
+        <div class="container">
             <h4 class="stat-title">My Timeline</h4>
             <div class="timeline">
                 <div class="timeline-item">
@@ -174,133 +291,192 @@
                     
                 </div>
             </div>
-        </section>
-        <section class="container" id="portfolio">
-            <div class="main-title">
-                <h2>My <span>Portfolio</span><span class="bg-text">My Work</span></h2>
+        </div>
+    </section>
+    
+    <!-- Portfolio Section -->
+    <section class="portfolio section" id="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2>My <span>Portfolio</span></h2>
+                <p>Some of my recent work</p>
             </div>
-            <p class="port-text">
-                Here is some of my work that I've done in various programming languages.
-            </p>
-            <div class="portfolios">
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port1.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="https://github.com/noshu12" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="www.linkedin.com/in/noushad-n081" class="icon">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+            <div class="portfolio-content">
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="img/port1.jpg" alt="Project 1">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>E-commerce Website</h3>
+                                <p>Full-stack e-commerce solution with React and Node.js</p>
+                                <div class="portfolio-links">
+                                    <a href="https://github.com/noshu12" class="portfolio-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="portfolio-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port2.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="https://github.com/noshu12" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="www.linkedin.com/in/noushad-n081" class="icon">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-img">
+                        <img src="img/port2.jpg" alt="Project 2">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>UI/UX Design</h3>
+                                <p>Modern interface design for mobile application</p>
+                                <div class="portfolio-links">
+                                    <a href="https://github.com/noshu12" class="portfolio-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="portfolio-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port3.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="https://github.com/noshu12" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="www.linkedin.com/in/noushad-n081" class="icon">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="img/port3.jpg" alt="Project 3">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Portfolio Website</h3>
+                                <p>Responsive portfolio website with modern design</p>
+                                <div class="portfolio-links">
+                                    <a href="https://github.com/noshu12" class="portfolio-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="portfolio-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port4.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="https://github.com/noshu12" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="www.linkedin.com/in/noushad-n081" class="icon">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-img">
+                        <img src="img/port4.jpg" alt="Project 4">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Mobile App</h3>
+                                <p>Cross-platform mobile application using React Native</p>
+                                <div class="portfolio-links">
+                                    <a href="https://github.com/noshu12" class="portfolio-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="portfolio-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port5.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="https://github.com/noshu12" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="www.linkedin.com/in/noushad-n081" class="icon">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="img/port5.jpg" alt="Project 5">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Blog Platform</h3>
+                                <p>Full-featured blog platform with CMS capabilities</p>
+                                <div class="portfolio-links">
+                                    <a href="https://github.com/noshu12" class="portfolio-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="portfolio-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port2.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="https://github.com/noshu12" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="www.linkedin.com/in/noushad-n081" class="icon">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port7.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="https://github.com/noshu12" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="www.linkedin.com/in/noushad-n081" class="icon">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-img">
+                        <img src="img/port6.jpg" alt="Project 6">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Brand Identity</h3>
+                                <p>Complete brand identity design including logo and guidelines</p>
+                                <div class="portfolio-links">
+                                    <a href="https://github.com/noshu12" class="portfolio-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="portfolio-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Client <span>Testimonials</span></h2>
+                <p>What clients say about me</p>
+            </div>
+            <div class="testimonials-content">
+                <div class="testimonial-item">
+                    <div class="testimonial-text">
+                        <p>"Noushad delivered an outstanding website that exceeded our expectations. His attention to detail and technical expertise are remarkable."</p>
+                    </div>
+                    <div class="testimonial-client">
+                        <img src="img/client1.jpg" alt="Client 1">
+                        <div class="client-info">
+                            <h4>John Doe</h4>
+                            <span>CEO, Tech Company</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-text">
+                        <p>"Working with Noushad was a pleasure. He understood our requirements perfectly and delivered a beautiful, functional product on time."</p>
+                    </div>
+                    <div class="testimonial-client">
+                        <img src="img/client2.jpg" alt="Client 2">
+                        <div class="client-info">
+                            <h4>Jane Smith</h4>
+                            <span>Marketing Director</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-text">
+                        <p>"Noushad's code is clean, efficient, and well-documented. He's a true professional who takes pride in his work."</p>
+                    </div>
+                    <div class="testimonial-client">
+                        <img src="img/client3.jpg" alt="Client 3">
+                        <div class="client-info">
+                            <h4>Mike Johnson</h4>
+                            <span>Startup Founder</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
         <section class="container" id="blogs">
             <div class="blogs-content">
                 <div class="main-title">
-                    <h2>My <span>Blogs</span><span class="bg-text">My Blogs</span></h2>
+                    <h2>My <span>Blogs</span></h2>
                 </div>
                 <div class="blogs">
                     <div class="blog">
@@ -373,127 +549,117 @@
                 </div>
             </div>
         </section>
-        <section class="container contact" id="contact">
-            <div class="contact-container">
-                <div class="main-title">
-                    <h2>Contact <span>Me</span><span class="bg-text">Contact</span></h2>
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact <span>Me</span></h2>
+                <p>Get in touch</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p>alamnoushad081@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Phone</h3>
+                            <p>+92 314 8005977</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Location</h3>
+                            <p>Karachi, Pakistan</p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://www.facebook.com/alamnoushad081?mibextid=ZbWKwL" target="_blank" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/noushad-alam-a959b3252" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/noshu12" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" target="_blank" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="contact-content-con">
-                    <div class="left-contact">
-                        <h4>Contact me here</h4>
-                        <p>
-                            Programming isn’t about what you know; it’s about what you can figure out. 
-                        </p>
-                        <div class="contact-info">
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>Location</span>
-                                </div>
-                                <p>
-                                    : Karachi, Pakistan
-                                </p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-envelope"></i>
-                                    <span>Email</span>
-                                </div>
-                                <p>
-                                    <span>: alamnoushad081@gmail.com</span>
-                                </p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-user-graduate"></i>
-                                    <span>Education</span>
-                                </div>
-                                <p>
-                                    <span>: FUUAST; Gulshan Campus</span>
-                                </p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-user-graduate"></i>
-                                    <span>Mobile Number</span>
-                                </div>
-                                <p>
-                                    <span>: +923148005977</span>
-                                </p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-globe-africa"></i>
-                                    <span>Languages</span>
-                                </div>
-                                <p>
-                                    <span>: Urdu, English</span>
-                                </p>
-                            </div>
+                <div class="contact-form">
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
                         </div>
-                        <div class="contact-icons">
-                            <div class="contact-icon">
-                                <a href="https://www.facebook.com/alamnoushad081?mibextid=ZbWKwL" target="_blank">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="https://www.linkedin.com/in/noushad-alam-a959b3252" target="_blank">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                                <a href="https://github.com/noshu12" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-youtube"></i>
-                                </a>
-                            </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
                         </div>
-                    </div>
-                    <div class="right-contact">
-                        <form action="" class="contact-form">
-                            <div class="input-control i-c-2">
-                                <input type="text" required placeholder="YOUR NAME">
-                                <input type="email" required placeholder="YOUR EMAIL">
-                            </div>
-                            <div class="input-control">
-                                <input type="text" required placeholder="ENTER SUBJECT">
-                            </div>
-                            <div class="input-control">
-                                <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
-                            </div>
-                            <div class="submit-btn">
-                                <a href="submit.txt" class="main-btn">
-                                    <span class="btn-text">Submit</span>
-                                    <span class="btn-icon"><i class="fas fa-submit "></i></span>
-                                    
-                                </a>
-                            </div>
-                        </form>
-                    </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <div class="controls">
-        <div class="control active-btn" data-id="home" >
-            <i class="fas fa-home"></i>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Noushad Alam</h3>
+                    <p>Full Stack Developer passionate about creating amazing digital experiences.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-envelope"></i> alamnoushad081@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +92 314 8005977</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Karachi, Pakistan</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Noushad Alam. All rights reserved.</p>
+            </div>
         </div>
-        <div class="control" data-id="about">
-            <i class="fas fa-user"></i>
-        </div>
-        <div class="control" data-id="portfolio">
-            <i class="fas fa-briefcase"></i>
-        </div>
-        <div class="control" data-id="blogs">
-            <i class="far fa-newspaper"></i>
-        </div>
-        <div class="control" data-id="contact">
-            <i class="fas fa-envelope-open"></i>
-        </div>
-    </div>
-    <div class="theme-btn">
-        <i class="fas fa-adjust"></i>
-    </div>
-    <script src="app.js"></script>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
